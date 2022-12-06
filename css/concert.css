@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url("img/black-phone.jpg");
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+}
+
+#main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+#seat-plan {
+    width: 95vw; 
+    margin: 5% auto auto auto; 
+    max-width: 1000px
+}

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url("img/black-phone.jpg");
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+}
+  
+#main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: -80px;
+}
+
+#logo {
+    margin: auto auto 0 auto;
+    max-width: 350px;
+    padding-left: 16px;
+}
+
+.title {
+    margin: auto 5% 0 5%;
+
+}
+
+#countdown {
+    margin: auto;
+    margin-top: 2%;
+    max-width: 300px;
+}
+
+th, td {
+    padding: 2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: helvetica;
+    text-align: center;
+    color: #f8a4bc;
+}
+
+.title {
+    font-size: 3vw;
+    margin-top: 4%;
+    text-align: center;
+    color: #f8a4bc;
+}
+
+.day {
+    border: 1px solid #f8a4bc;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.day:hover, .active-day {
+    background-color: #f8a4bc;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+    .title, th, td {
+        font-size: 3vw;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #countdown {
+        margin-top: 6%;
+    }
+    .title {
+        font-size: 20.3px;
+    }
+    td,th {
+        font-size: 18px;
+    }
+}
